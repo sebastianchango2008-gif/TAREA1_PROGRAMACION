@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int vi,vf,cont;
+    
+    printf("Ingrese el valor inicial\n");
+    scanf("%d",&vi);
+    printf("Ingrese el valor final\n");
+    scanf("%d",&vf);
+    printf("Ingrese el valor a incrementar\n");
+    scanf("%d",&cont);
+    
+    while(cont <= 0){
+        printf("ERROR Ingrese nuevamente el valor a incrementar\n");
+        scanf("%d",&cont);
+    }
+    
+    for(int i = vi;i <= vf;i += cont){
+    
+        printf("\n%d" ,i);
+    
+    }
+    
+}
